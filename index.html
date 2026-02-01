@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Candy Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Favorite Candy Analyzer</h1>
+
+        <div class="form-section">
+            <h2>Enter Your Information</h2>
+            
+            <label for="userName">Your Name:</label>
+            <input type="text" id="userName" placeholder="Enter your name">
+            
+            <label for="candyName">Favorite Candy:</label>
+            <input type="text" id="candyName" placeholder="e.g., Snickers">
+            
+            <label for="candyPrice">Price ($):</label>
+            <input type="number" id="candyPrice" step="0.01" placeholder="1.50">
+            
+            <label for="candyType">Candy Type:</label>
+            <select id="candyType">
+                <option value="">Select type</option>
+                <option value="chocolate">Chocolate</option>
+                <option value="gummy">Gummy</option>
+                <option value="hard">Hard Candy</option>
+                <option value="sour">Sour</option>
+                <option value="licorice">Licorice</option>
+            </select>
+            
+            <button id="analyzeBtn">Analyze</button>
+        </div>
+
+        <div class="results">
+            <h2>Results</h2>
+            <div id="output">
+                <p>Fill out the form and click Analyze to see results.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
